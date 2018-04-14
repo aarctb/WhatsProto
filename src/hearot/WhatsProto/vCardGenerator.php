@@ -207,9 +207,9 @@ class vCardGenerator
 
         $this->filename = str_replace(' ', '_', $this->filename);
 
-        header('Content-type: text/directory');
-        header('Content-Disposition: attachment; filename='.$this->filename.'.vcf');
-        header('Pragma: public');
+        header('content-type: text/directory');
+        header('content-Disposition: attachment; filename='.$this->filename.'.vcf');
+        header('pragma: public');
         echo $this->card;
 
         return true;
